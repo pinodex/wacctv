@@ -180,11 +180,6 @@ namespace WACCTV
 
                     break;
 
-                case "reconnectToolStripMenuItem":
-                    webcam.Restart();
-
-                    break;
-
                 case "startToolStripMenuItem":
                     startToolStripMenuItem.Enabled = false;
                     stopToolStripMenuItem.Enabled = true;

@@ -126,7 +126,8 @@ namespace WACCTV
 
         private void Preferences_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (cameraDevice != Properties.Settings.Default.cameraDevice)
+            if (cameraDevice != Properties.Settings.Default.cameraDevice ||
+                cameraResolution != Properties.Settings.Default.cameraResolution)
             {
                 Webcam.Restart();
             }

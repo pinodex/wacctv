@@ -39,7 +39,6 @@
             this.zoomModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stretchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reconnectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.startToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -101,8 +100,7 @@
             this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.preferencesToolStripMenuItem,
             this.toggleFullscreenToolStripMenuItem,
-            this.zoomModeToolStripMenuItem,
-            this.reconnectToolStripMenuItem});
+            this.zoomModeToolStripMenuItem});
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
             this.optionsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.optionsToolStripMenuItem.Text = "Options";
@@ -143,13 +141,6 @@
             this.stretchToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.stretchToolStripMenuItem.Text = "Stretch";
             this.stretchToolStripMenuItem.Click += new System.EventHandler(this.menuItemClicked);
-            // 
-            // reconnectToolStripMenuItem
-            // 
-            this.reconnectToolStripMenuItem.Name = "reconnectToolStripMenuItem";
-            this.reconnectToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
-            this.reconnectToolStripMenuItem.Text = "Reconnect";
-            this.reconnectToolStripMenuItem.Click += new System.EventHandler(this.menuItemClicked);
             // 
             // recordToolStripMenuItem
             // 
@@ -192,7 +183,7 @@
             // 
             // statusStrip
             // 
-            this.statusStrip.GripMargin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.statusStrip.GripMargin = new System.Windows.Forms.Padding(0);
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.statusInfo,
             this.statusStripTime,
@@ -227,7 +218,7 @@
             // 
             this.statusDeviceName.BackColor = System.Drawing.Color.Transparent;
             this.statusDeviceName.Name = "statusDeviceName";
-            this.statusDeviceName.Size = new System.Drawing.Size(224, 17);
+            this.statusDeviceName.Size = new System.Drawing.Size(255, 17);
             this.statusDeviceName.Spring = true;
             this.statusDeviceName.Text = "Unknown Device";
             this.statusDeviceName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -249,7 +240,7 @@
             this.viewRecordingLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.viewRecordingLabel.Visible = false;
             // 
-            // MainWindow
+            // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -261,7 +252,7 @@
             this.Controls.Add(this.menuStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip;
-            this.Name = "MainWindow";
+            this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WACCTV";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -295,7 +286,6 @@
         private System.Windows.Forms.ToolStripStatusLabel statusStripTime;
         private System.Windows.Forms.ToolStripStatusLabel statusStripInfo;
         private System.Windows.Forms.ToolStripStatusLabel statusDeviceName;
-        private System.Windows.Forms.ToolStripMenuItem reconnectToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toggleFullscreenToolStripMenuItem;
         private System.Windows.Forms.Label viewRecordingLabel;
         private System.Windows.Forms.ToolStripMenuItem zoomModeToolStripMenuItem;
